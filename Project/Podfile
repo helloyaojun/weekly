@@ -1,0 +1,14 @@
+platform :ios, ‘8.0’
+
+target 'Project' do
+
+pod 'Alamofire'
+
+pod 'MJRefresh'
+
+end
+
+use_frameworks!
+
+inhibit_all_warnings!
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Project" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="ABc-bQ-qda" id="CUI-q6-nr3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0XU-0Z-DTX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ABc-bQ-qda">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="jOz-ZE-YQv"/>
+                                <outlet property="delegate" destination="-1" id="Y6M-QQ-hFu"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ABc-bQ-qda" secondAttribute="bottom" id="DUO-O5-04b"/>
+                        <constraint firstItem="ABc-bQ-qda" firstAttribute="leading" secondItem="0XU-0Z-DTX" secondAttribute="leading" id="MeX-nA-SuI"/>
+                        <constraint firstAttribute="trailing" secondItem="ABc-bQ-qda" secondAttribute="trailing" id="bA5-dJ-tJ8"/>
+                        <constraint firstItem="ABc-bQ-qda" firstAttribute="top" secondItem="0XU-0Z-DTX" secondAttribute="top" id="flQ-2G-bTP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0XU-0Z-DTX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1gp-Tf-e1K"/>
+                <constraint firstAttribute="trailing" secondItem="0XU-0Z-DTX" secondAttribute="trailing" id="2rK-6l-bOF"/>
+                <constraint firstItem="0XU-0Z-DTX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KVv-b9-ohf"/>
+                <constraint firstAttribute="bottom" secondItem="0XU-0Z-DTX" secondAttribute="bottom" id="m8H-Y5-yfn"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeetingsViewController" customModule="Project" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="Af3-gS-nkq" id="3c0-6r-B4s"/>
+                <outlet property="searchDisplayController" destination="V1T-Wh-JRZ" id="Xpz-b8-X3E"/>
+                <outlet property="tableView" destination="VBU-RS-93R" id="Oa7-tV-tVc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="478-zI-YOt">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Af3-gS-nkq">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="ul0-g6-Y9O"/>
+                            </constraints>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Vv7-MA-UOG"/>
+                            </connections>
+                        </searchBar>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VBU-RS-93R">
+                            <rect key="frame" x="0.0" y="44" width="375" height="515"/>
+                            <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="WpC-kc-dCd"/>
+                                <outlet property="delegate" destination="-1" id="r97-ke-RWR"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Af3-gS-nkq" firstAttribute="top" secondItem="478-zI-YOt" secondAttribute="top" id="Tus-r0-3Ro"/>
+                        <constraint firstItem="VBU-RS-93R" firstAttribute="top" secondItem="Af3-gS-nkq" secondAttribute="bottom" id="Xfh-L2-JUB"/>
+                        <constraint firstItem="Af3-gS-nkq" firstAttribute="leading" secondItem="478-zI-YOt" secondAttribute="leading" id="ciq-cR-Tu6"/>
+                        <constraint firstAttribute="bottom" secondItem="VBU-RS-93R" secondAttribute="bottom" constant="44" id="jMN-4A-IPp"/>
+                        <constraint firstItem="VBU-RS-93R" firstAttribute="leading" secondItem="478-zI-YOt" secondAttribute="leading" id="loQ-LT-15E"/>
+                        <constraint firstAttribute="trailing" secondItem="Af3-gS-nkq" secondAttribute="trailing" id="nlj-qa-1HQ"/>
+                        <constraint firstAttribute="trailing" secondItem="VBU-RS-93R" secondAttribute="trailing" id="yFt-EO-An0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="478-zI-YOt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="00a-ce-v2I"/>
+                <constraint firstItem="478-zI-YOt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="4ax-ac-f74"/>
+                <constraint firstAttribute="bottom" secondItem="478-zI-YOt" secondAttribute="bottom" id="XIK-K0-SRL"/>
+                <constraint firstAttribute="trailing" secondItem="478-zI-YOt" secondAttribute="trailing" id="s6Z-Jy-6HV"/>
+            </constraints>
+        </view>
+        <searchDisplayController id="V1T-Wh-JRZ">
+            <connections>
+                <outlet property="delegate" destination="-1" id="NzP-bR-wtN"/>
+                <outlet property="searchBar" destination="Af3-gS-nkq" id="I84-hQ-spo"/>
+                <outlet property="searchContentsController" destination="-1" id="Igw-vb-wFi"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="QoZ-M6-x4F"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="ApO-8M-JWw"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>
