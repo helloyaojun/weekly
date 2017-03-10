@@ -12,6 +12,8 @@ class ViewController: UITabBarController {
 
     
     let vcNames = ["HomeViewController","ProjectOverviewViewController","MeetingsViewController","WeeklyManagementViewController","ConfigurationViewController"]
+//    let tabImageNames = ["首页tab","项目管理tab","会议管理tab","周报管理tab","配置管理tab"]
+
     let tabNames = ["首页","项目概况","会议管理","周报管理","系统配置"]
 
     var vcTemp: Array<UIViewController> = []
