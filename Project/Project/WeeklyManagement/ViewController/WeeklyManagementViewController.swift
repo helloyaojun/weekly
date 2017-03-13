@@ -16,7 +16,7 @@ class WeeklyManagementViewController: BaseViewController,UITableViewDataSource,U
     @IBOutlet weak var timeBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     var dataList: NSMutableArray! = nil
-    
+    let weekRangeTypes:Array<String> = ["         周","         月","         年"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +53,8 @@ class WeeklyManagementViewController: BaseViewController,UITableViewDataSource,U
     }
     var thisWeek = ""
     var weekArray:Array<String> = []
-    
+    var monthArray:Array<String> = []
+
     func timeBtnClick() {
     
         let weeksInYear = WeeksInYear()
@@ -70,7 +71,7 @@ class WeeklyManagementViewController: BaseViewController,UITableViewDataSource,U
     func drawPicker(){
     
         picker = UIPickerView(frame: CGRect(x: 0, y: self.view.bounds.height-pickerHeight, width: screenWidth, height: pickerHeight+20))
-        picker.backgroundColor = UIColor.lightGray
+        picker.backgroundColor = UIColor.groupTableViewBackground
         picker.dataSource = self
         picker.delegate = self
         self.view.addSubview(picker)
@@ -105,26 +106,67 @@ class WeeklyManagementViewController: BaseViewController,UITableViewDataSource,U
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return 2
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return weekArray.count
+        
+        switch component {
+        case 0:
+            return weekRangeTypes.count
+            
+        case 1:
+            return weekArray.count
+
+        default:
+            return 0
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
-        return screenWidth
+        
+        switch component {
+        case 0:
+            return 90
+            
+        case 1:
+            return screenWidth-90
+            
+        default:
+            return 0
+        }
+
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        thisWeek = weekArray[row]
-        return thisWeek
+        switch component {
+        case 0:
+            return weekRangeTypes[row]
+            
+        case 1:
+            thisWeek = weekArray[row]
+            return thisWeek
+            
+        default:
+            return nil
+        }
+
     }
     
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     
-        selectedWeekIndex = component
+        switch component {
+        case 0:
+            pickerView.reloadComponent(1)
+            
+        case 1:
+            selectedWeekIndex = component
+            
+        default:
+            return 
+        }
+
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         

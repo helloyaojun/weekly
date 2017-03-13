@@ -66,6 +66,7 @@
 		FF0D39101E63CCCD0083ABF9 /* ProjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D390F1E63CCCD0083ABF9 /* ProjectService.swift */; };
 		FF0D39121E63CCDE0083ABF9 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D39111E63CCDE0083ABF9 /* ConfigurationService.swift */; };
 		FF0D39141E63CCED0083ABF9 /* WeeklyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D39131E63CCED0083ABF9 /* WeeklyService.swift */; };
+		FF4C50D11E767E9500BC0A4A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C50D01E767E9500BC0A4A /* BaseNavigationController.swift */; };
 		FF523EB41E6E7DE20085ED19 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF523EB31E6E7DE20085ED19 /* Models.swift */; };
 		FF523EB61E6E80010085ED19 /* WeeksInYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF523EB51E6E80010085ED19 /* WeeksInYear.swift */; };
 		FF523EB91E6E853B0085ED19 /* ProductLineListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF523EB71E6E853B0085ED19 /* ProductLineListViewController.swift */; };
@@ -82,7 +83,6 @@
 		FF523ED21E6E86020085ED19 /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF523ED01E6E86020085ED19 /* ProductDetailViewController.xib */; };
 		FF523ED51E70E99F0085ED19 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF523ED31E70E99F0085ED19 /* ProjectCell.swift */; };
 		FF523ED61E70E99F0085ED19 /* ProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF523ED41E70E99F0085ED19 /* ProjectCell.xib */; };
-		FF74B6651E4B12B20044EA07 /* HomeNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74B6641E4B12B20044EA07 /* HomeNavBar.swift */; };
 		FF9F6DA61E6595C100C8A785 /* BaseHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F6DA51E6595C100C8A785 /* BaseHttpRequest.swift */; };
 		FFF1540D1E484B980004C2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF1540C1E484B980004C2E3 /* AppDelegate.swift */; };
 		FFF1540F1E484B980004C2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF1540E1E484B980004C2E3 /* ViewController.swift */; };
@@ -92,7 +92,6 @@
 		FFF154221E484D750004C2E3 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF154201E484D750004C2E3 /* TestViewController.m */; };
 		FFF154231E484D750004C2E3 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF154211E484D750004C2E3 /* TestViewController.xib */; };
 		FFF1542E1E4AC18A0004C2E3 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF1542D1E4AC18A0004C2E3 /* Constant.swift */; };
-		FFF6A3051E56F6F500B3B144 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6A3041E56F6F500B3B144 /* BaseNavigationController.swift */; };
 		FFF6A3091E5AC33A00B3B144 /* DropTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6A3081E5AC33A00B3B144 /* DropTable.swift */; };
 /* End PBXBuildFile section */
 
@@ -161,6 +160,7 @@
 		FF0D390F1E63CCCD0083ABF9 /* ProjectService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectService.swift; sourceTree = "<group>"; };
 		FF0D39111E63CCDE0083ABF9 /* ConfigurationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
 		FF0D39131E63CCED0083ABF9 /* WeeklyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyService.swift; sourceTree = "<group>"; };
+		FF4C50D01E767E9500BC0A4A /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		FF523EB31E6E7DE20085ED19 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		FF523EB51E6E80010085ED19 /* WeeksInYear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeksInYear.swift; sourceTree = "<group>"; };
 		FF523EB71E6E853B0085ED19 /* ProductLineListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductLineListViewController.swift; sourceTree = "<group>"; };
@@ -177,7 +177,6 @@
 		FF523ED01E6E86020085ED19 /* ProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
 		FF523ED31E70E99F0085ED19 /* ProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		FF523ED41E70E99F0085ED19 /* ProjectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCell.xib; sourceTree = "<group>"; };
-		FF74B6641E4B12B20044EA07 /* HomeNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavBar.swift; sourceTree = "<group>"; };
 		FF9F6DA51E6595C100C8A785 /* BaseHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHttpRequest.swift; sourceTree = "<group>"; };
 		FFF154091E484B980004C2E3 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF1540C1E484B980004C2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -192,7 +191,6 @@
 		FFF154211E484D750004C2E3 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		FFF154241E484E7C0004C2E3 /* Project.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.pch; sourceTree = "<group>"; };
 		FFF1542D1E4AC18A0004C2E3 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		FFF6A3041E56F6F500B3B144 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		FFF6A3081E5AC33A00B3B144 /* DropTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -322,8 +320,8 @@
 			isa = PBXGroup;
 			children = (
 				FF02D2C61E4D56FE0033820C /* BaseViewController.swift */,
-				FFF6A3041E56F6F500B3B144 /* BaseNavigationController.swift */,
 				FF9F6DA51E6595C100C8A785 /* BaseHttpRequest.swift */,
+				FF4C50D01E767E9500BC0A4A /* BaseNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -520,7 +518,6 @@
 				FF02D2B31E4D56570033820C /* WeeklyManagement */,
 				FFF1540C1E484B980004C2E3 /* AppDelegate.swift */,
 				FFF1540E1E484B980004C2E3 /* ViewController.swift */,
-				FF74B6641E4B12B20044EA07 /* HomeNavBar.swift */,
 				FFF1541F1E484D750004C2E3 /* TestViewController.h */,
 				FFF154201E484D750004C2E3 /* TestViewController.m */,
 				FFF154211E484D750004C2E3 /* TestViewController.xib */,
@@ -697,7 +694,6 @@
 				FF0D38E21E63BE780083ABF9 /* HelpingMapper.swift in Sources */,
 				FF0D390E1E63CCB90083ABF9 /* HomeService.swift in Sources */,
 				FF0D39101E63CCCD0083ABF9 /* ProjectService.swift in Sources */,
-				FF74B6651E4B12B20044EA07 /* HomeNavBar.swift in Sources */,
 				FF0D38F71E63BE780083ABF9 /* URLTransform.swift in Sources */,
 				FF0D39141E63CCED0083ABF9 /* WeeklyService.swift in Sources */,
 				FF523ED11E6E86020085ED19 /* ProductDetailViewController.swift in Sources */,
@@ -740,7 +736,7 @@
 				FF02D2EF1E51A3E50033820C /* WeekCell.swift in Sources */,
 				FF523EB91E6E853B0085ED19 /* ProductLineListViewController.swift in Sources */,
 				FF0D38F21E63BE780083ABF9 /* ReflectionHelper.swift in Sources */,
-				FFF6A3051E56F6F500B3B144 /* BaseNavigationController.swift in Sources */,
+				FF4C50D11E767E9500BC0A4A /* BaseNavigationController.swift in Sources */,
 				FF0D38F31E63BE780083ABF9 /* Serializer+Legacy.swift in Sources */,
 				FF0D38DD1E63BE780083ABF9 /* DataTransform.swift in Sources */,
 				FFF1540D1E484B980004C2E3 /* AppDelegate.swift in Sources */,

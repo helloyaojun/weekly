@@ -38,7 +38,6 @@ class ViewController: UITabBarController {
         }
     }
     
-//    let navBar = HomeNavBar()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,23 +45,11 @@ class ViewController: UITabBarController {
         self.view.backgroundColor = UIColor.white
         self.viewControllers = vcs
         
-//        let navBar = HomeNavBar()
-//        self.view.addSubview(navBar)
-        
 //        let test: TestViewController = TestViewController()
 //        self.view.addSubview(test.view)
         
 
     }
-
-//    override func viewWillLayoutSubviews() {
-//        super.viewWillLayoutSubviews()
-//        
-//        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[navBar]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["navBar" :navBar]))
-//        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[navBar]-0-|", options: .alignAllTop, metrics: nil, views: ["navBar" :navBar]))
-//
-//        navBar.reset()
-//    }
  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

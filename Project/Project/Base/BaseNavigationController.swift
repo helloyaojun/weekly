@@ -30,6 +30,7 @@ class BaseNavigationController: UINavigationController {
 
         self.navigationBar.backgroundColor = UIColor.red
         self.navigationBar.isMultipleTouchEnabled = false
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,6 +38,19 @@ class BaseNavigationController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        print(self.navigationBar)
+        print(self)
+        
+//        self.titleButton.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-50-[titleButton]-50-|", options: .directionLeftToRight, metrics: nil, views: ["titleButton":titleButton]))
+//        self.titleButton.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-20-[titleButton(44)]", options: .alignAllTop, metrics: nil, views: ["titleButton":titleButton]))
+        
+//        rightButton.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[rightButton(44)]-0-|", options: .alignAllRight, metrics: nil, views: ["rightButton":rightButton]))
+//        rightButton.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-20-[rightButton(44)]", options: .alignAllTop, metrics: nil, views: ["rightButton":rightButton]))
+
+    }
 
     /*
     // MARK: - Navigation
